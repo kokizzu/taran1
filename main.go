@@ -46,7 +46,7 @@ func main() {
 	L.PanicIf(err,`cannot connect to tarantool`)
 	
 	// truncate tables
-	taran := Tr.Taran{taranConn,log}
+	taran := Tr.Taran{Connection: taranConn, Log: log}
 	taran.MigrateTarantool(dummyTable)
 	
 	// TODO: generate 1m records vinyl vs memtx
