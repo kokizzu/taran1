@@ -1,6 +1,6 @@
 module taran1
 
-go 1.15
+go 1.26.10
 
 require (
 	github.com/OneOfOne/cmap v0.0.0-20170825200327-ccaef7657ab8 // indirect
